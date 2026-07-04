@@ -1,0 +1,20 @@
+
+server:
+  port: 8080
+
+spring:
+  application:
+    name: mongo-demo
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: demo_db
+      # 如需认证，请取消以下注释并填写正确的用户名和密码
+      # username: admin
+      # password: password
+
+logging:
+  level:
+    com.example.mongodemo: DEBUG
+    org.springframework.data.mongodb: DEBUG
